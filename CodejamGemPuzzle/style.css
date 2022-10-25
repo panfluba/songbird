@@ -61,7 +61,7 @@ p{
 }
 
 #mute{
-border-radius: 100%;
+border-radius: 100%
 /* aspect-ratio: 1/1; */
 }
 #mute img{
@@ -69,6 +69,10 @@ border-radius: 100%;
     margin: auto;
     /* height: auto;
     width: 10px; */
+}
+
+.muted{
+    content:url(/imgs/muted.png);
 }
 
 @media(max-width: 800px){
