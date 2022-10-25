@@ -1,3 +1,5 @@
+document.body.innerHTML = '<main><div class="inner_container"><div class="inRow"><button type="button" onclick="shuffleTiles()" id="restart_button">restart</button><button type="button" id="stop_button">stop</button><button type="button">save</button><button id="mute" type="button" onclick="mute()"><img src="./imgs/unmuted.png" alt="" id="img_mute"></button></div><div class="inRow"><div><p>00 : 00</p></div><div class="moves"><span>Moves:&nbsp;</span><span id="counter"> 0 </span></div></div>  <table id="table"></table></div></main>'
+
 // ---------------init cell--------------------
 "use strict";
 var element_counter = document.getElementById('counter');
@@ -172,12 +174,11 @@ stop_b.onclick = function () {
     // })
 }
 restart.addEventListener('click', function () {
-    stop_b.style.backgroundColor = ''
-    h3.textContent = "00 : 00";
-    // seconds = 0; minutes = 0;
+    stop_b.style.backgroundColor = '';
     sec = 0;
     min = 0;
     n = 0;
+    h3.textContent = "00 : 00";
     clearTimeout(t);
     timer();
 })
