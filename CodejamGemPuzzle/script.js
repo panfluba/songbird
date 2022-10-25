@@ -174,10 +174,10 @@ stop_b.onclick = function () {
 restart.addEventListener('click', function () {
     stop_b.style.backgroundColor = ''
     h3.textContent = "00 : 00";
-    seconds = 0; minutes = 0;
+    // seconds = 0; minutes = 0;
     sec = 0;
     min = 0;
-    i = 0;
+    n = 0;
     clearTimeout(t);
     timer();
 })
