@@ -72,7 +72,7 @@ border-radius: 100%
 }
 
 .muted{
-    content:url(/imgs/muted.png);
+    content:url(./imgs/muted.png);
 }
 
 @media(max-width: 800px){

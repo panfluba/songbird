@@ -36,7 +36,7 @@ function shuffleTiles() {
 
 var audio = new Audio();
 audio.preload = 'auto';
-audio.src = '/audio/click.mp3';
+audio.src = './audio/click.mp3';
 
 
 function createCell() {
