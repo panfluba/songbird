@@ -60,6 +60,17 @@ p{
     margin-right: 30px;
 }
 
+#mute{
+border-radius: 100%;
+/* aspect-ratio: 1/1; */
+}
+#mute img{
+    width: 35px;
+    margin: auto;
+    /* height: auto;
+    width: 10px; */
+}
+
 @media(max-width: 800px){
     .tile {
         width: 60px;

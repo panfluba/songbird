@@ -71,6 +71,9 @@ function handleClick(e) {
     }
 }
 
+function mute(){
+    var mute_button = document.getElementById('mute');
+}
 
 
 
