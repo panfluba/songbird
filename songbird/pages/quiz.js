@@ -9,7 +9,7 @@ const option1 = document.querySelector('.option1'),
     option4 = document.querySelector('.option4'),
     option5 = document.querySelector('.option5'),
     option6 = document.querySelector('.option6'),
-    optionElements = document.querySelectorAll('.option'), //AllQuestions
+    optionElements = document.querySelectorAll('.option'),
     question = document.getElementById('question'),
     numberOfQuestion = document.getElementById('number-of-question'),
     numberOfAllQuestion = document.getElementById('number-of-all-questions'),
@@ -152,7 +152,7 @@ const questions = [
             "../assets/audio/music/Rammstein/Rosenrot.mp3",
             "../assets/audio/music/Kizaru/money_long.mp3",
             "../assets/audio/music/Rammstein/Sonne.mp3",
-            "../assets/audio/music/miyagi/sorry.mp3",
+            "../assets/audio/music/Miyagi/sorry.mp3",
             "../assets/audio/music/Skriptonit/cepi.mp3",
         ],
     },
@@ -208,11 +208,11 @@ const questions = [
         ],
 
         music: [
-            "../assets/audio/music/Kizaru/block_Baby.mp3",
+            "../assets/audio/music/Kizaru/Block_Baby.mp3",
             "../assets/audio/music/Kizaru/Bon_Voyage.mp3",
             "../assets/audio/music/Kizaru/so-icy-nihao.mp3",
             "../assets/audio/music/Skriptonit/moskva_lubit.mp3",
-            "../assets/audio/music/miyagi/govori_mne.mp3",
+            "../assets/audio/music/Miyagi/govori_mne.mp3",
             "../assets/audio/music/Adlin/dead_inside.mp3",
         ],
     },
@@ -268,15 +268,15 @@ const questions = [
         music: [
             "../assets/audio/music/Adlin/pustota.mp3",
             "../assets/audio/music/Rammstein/Rosenrot.mp3",
-            "../assets/audio/music/miyagi/bismarck.mp3",
-            "../assets/audio/music/miyagi/tam_reveli_gory.mp3",
+            "../assets/audio/music/Miyagi/bismarck.mp3",
+            "../assets/audio/music/Miyagi/tam_reveli_gory.mp3",
             "../assets/audio/music/Rammstein/Zeit.mp3",
-            "../assets/audio/music/miyagi/samurai.mp3",
+            "../assets/audio/music/Miyagi/samurai.mp3",
 
 
         ],
     },
-  //////////////////////////////
+    //////////////////////////////
     {
         rapper: 'Одна',
         tracker: '𐤏',
@@ -328,12 +328,12 @@ const questions = [
             "../assets/audio/music/Adlin/za_spinoy.mp3",
             "../assets/audio/music/Rammstein/Mein-Herz-brennt.mp3",
             "../assets/audio/music/Skriptonit/polozhenie.mp3",
-            "../assets/audio/music/miyagi/samurai.mp3",
+            "../assets/audio/music/Miyagi/samurai.mp3",
             "../assets/audio/music/Skriptonit/kosmos.mp3",
             "../assets/audio/music/Adlin/odna.mp3",
         ],
     },
-  //////////////////////////////
+    //////////////////////////////
     {
         rapper: 'Mein Herz brennt',
         tracker: '𐤏',
@@ -390,11 +390,11 @@ const questions = [
             "../assets/audio/music/Rammstein/Zeit.mp3",
             "../assets/audio/music/Rammstein/Sonne.mp3",
             "../assets/audio/music/Adlin/dead_inside.mp3",
-            "../assets/audio/music/Kizaru/money-long.mp3",
+            "../assets/audio/music/Kizaru/money_long.mp3",
 
         ],
     },
-      //////////////////////////////
+    //////////////////////////////
     {
         rapper: 'Положение',
         tracker: '𐤏',
@@ -510,7 +510,7 @@ const questions = [
             "../assets/audio/music/Rammstein/Deutschland.mp3",
         ],
     },
-      //////////////////////////////
+    //////////////////////////////
     {
         rapper: 'Москва любит..',
         tracker: '𐤏',
@@ -576,7 +576,7 @@ const hidden_photo = document.getElementById('rapper__photo');
 const hiddenavatar = document.getElementById('hidden_card');
 const hidden_name = document.getElementById('hidden_name');
 
-numberOfAllQuestion.innerHTML = questions.length  // output the number of questions
+numberOfAllQuestion.innerHTML = questions.length;
 
 
 
@@ -678,23 +678,23 @@ const load = () => {
 
 
     if (indexOfPage == 0) {
-        document.querySelector('.panel6').classList.remove('active_panel');
-        document.querySelector('.panel1').classList.add('active_panel');
+        document.querySelector('.q6').classList.remove('active_panel');
+        document.querySelector('.q1').classList.add('active_panel');
     } else if (indexOfPage == 1) {
-        document.querySelector('.panel1').classList.remove('active_panel');
-        document.querySelector('.panel2').classList.add('active_panel');
+        document.querySelector('.q1').classList.remove('active_panel');
+        document.querySelector('.q2').classList.add('active_panel');
     } else if (indexOfPage == 2) {
-        document.querySelector('.panel2').classList.remove('active_panel');
-        document.querySelector('.panel3').classList.add('active_panel');
+        document.querySelector('.q2').classList.remove('active_panel');
+        document.querySelector('.q3').classList.add('active_panel');
     } else if (indexOfPage == 3) {
-        document.querySelector('.panel3').classList.remove('active_panel');
-        document.querySelector('.panel4').classList.add('active_panel');
+        document.querySelector('.q3').classList.remove('active_panel');
+        document.querySelector('.q4').classList.add('active_panel');
     } else if (indexOfPage == 4) {
-        document.querySelector('.panel4').classList.remove('active_panel');
-        document.querySelector('.panel5').classList.add('active_panel');
+        document.querySelector('.q4').classList.remove('active_panel');
+        document.querySelector('.q5').classList.add('active_panel');
     } else if (indexOfPage == 5) {
-        document.querySelector('.panel5').classList.remove('active_panel');
-        document.querySelector('.panel6').classList.add('active_panel');
+        document.querySelector('.q5').classList.remove('active_panel');
+        document.querySelector('.q6').classList.add('active_panel');
     };
 
     indexOfPage++;
@@ -772,8 +772,6 @@ const checkAnswer = el => {
         btnNext.classList.add('btn-active');
         hidden_name.innerHTML = questions[indexOfQuestion].rapper;
 
-
-
     }
     else {
         if (optionElements[el.target.dataset.id].classList.contains('sound')) {
@@ -800,27 +798,17 @@ const checkAnswer = el => {
 
 };
 
-
-
-
-
-
-
-
 const enableOptions = () => {
     optionElements.forEach(item => {
         item.classList.remove('correct', 'wrong');
     })
 };
-//КрУгИ с ОтВеТаМи ИндИкаТор
 const answerTracker = () => {
     questions.forEach(() => {
         const div = document.createElement('div');
         answersTracker.appendChild(div).classList.add('a');
     })
 };
-
-
 
 const validate = () => {
     if (FlagNext === true) {
@@ -840,14 +828,11 @@ const validate = () => {
         FlagNext = false;
         FlagSoundCorrect = false;
     } else {
-        alert('Ответ на вопрос не был дан. Выберите правильный ответ, чтобы перейти к следующему вопросу.')
+        alert("You haven't answered the question. Choose the correct answer to move on the next question.")
     }
 };
 
 btnNext.addEventListener('click', validate);
-
-
-
 
 const disabledOptions = () => {
     optionElements.forEach(item => {
@@ -982,9 +967,6 @@ audioPlay1.onloadeddata = () => {
     let seconds1 = parseInt(audioPlay1.duration % 60);
 }
 
-
-
-
 const update = () => {
     if (!audioPlay.ended) {
         let playerMinute = parseInt(audioPlay.currentTime / 60);
@@ -1066,8 +1048,6 @@ volume1.addEventListener('change', function changeVolume(elix) {
     }
 });
 
-
-//1
 const valueChanged = (e) => (e.style.setProperty('--value', e.value));
 let mouseDownOnSlider = false;
 let mouseDownOnSlider1 = false;
@@ -1110,7 +1090,6 @@ progress1.addEventListener("mouseup", () => {
     mouseDownOnSlider1 = false;
 });
 
-/*sounds*/
 
 function audioCorrect() {
     audioPlay.pause();
@@ -1130,9 +1109,6 @@ function audioWrong() {
     return true;
 }
 
-
-
-///PRELOAD
 document.addEventListener("DOMContentLoaded", () => {
     const images = new Array();
 
@@ -1143,7 +1119,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Предварительная загрузка нужных картинок
     preloadImages(
         "../assets/images/adlin.jpg",
         "../assets/images/bring.jpg",

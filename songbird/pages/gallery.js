@@ -122,7 +122,7 @@ const questions = [
             "../assets/audio/music/Rammstein/Rosenrot.mp3",
             "../assets/audio/music/Kizaru/money_long.mp3",
             "../assets/audio/music/Rammstein/Sonne.mp3",
-            "../assets/audio/music/miyagi/sorry.mp3",
+            "../assets/audio/music/Miyagi/sorry.mp3",
             "../assets/audio/music/Skriptonit/cepi.mp3",
         ],
     },
@@ -178,11 +178,11 @@ const questions = [
         ],
 
         music: [
-            "../assets/audio/music/Kizaru/block_Baby.mp3",
+            "../assets/audio/music/Kizaru/Block_Baby.mp3",
             "../assets/audio/music/Kizaru/Bon_Voyage.mp3",
             "../assets/audio/music/Kizaru/so-icy-nihao.mp3",
             "../assets/audio/music/Skriptonit/moskva_lubit.mp3",
-            "../assets/audio/music/miyagi/govori_mne.mp3",
+            "../assets/audio/music/Miyagi/govori_mne.mp3",
             "../assets/audio/music/Adlin/dead_inside.mp3",
         ],
     },
@@ -238,10 +238,10 @@ const questions = [
         music: [
             "../assets/audio/music/Adlin/pustota.mp3",
             "../assets/audio/music/Rammstein/Rosenrot.mp3",
-            "../assets/audio/music/miyagi/bismarck.mp3",
-            "../assets/audio/music/miyagi/tam_reveli_gory.mp3",
+            "../assets/audio/music/Miyagi/bismarck.mp3",
+            "../assets/audio/music/Miyagi/tam_reveli_gory.mp3",
             "../assets/audio/music/Rammstein/Zeit.mp3",
-            "../assets/audio/music/miyagi/samurai.mp3",
+            "../assets/audio/music/Miyagi/samurai.mp3",
 
 
         ],
@@ -298,7 +298,7 @@ const questions = [
             "../assets/audio/music/Adlin/za_spinoy.mp3",
             "../assets/audio/music/Rammstein/Mein-Herz-brennt.mp3",
             "../assets/audio/music/Skriptonit/polozhenie.mp3",
-            "../assets/audio/music/miyagi/samurai.mp3",
+            "../assets/audio/music/Miyagi/samurai.mp3",
             "../assets/audio/music/Skriptonit/kosmos.mp3",
             "../assets/audio/music/Adlin/odna.mp3",
         ],
@@ -360,7 +360,7 @@ const questions = [
             "../assets/audio/music/Rammstein/Zeit.mp3",
             "../assets/audio/music/Rammstein/Sonne.mp3",
             "../assets/audio/music/Adlin/dead_inside.mp3",
-            "../assets/audio/music/Kizaru/money-long.mp3",
+            "../assets/audio/music/Kizaru/money_long.mp3",
 
         ],
     },
@@ -551,7 +551,7 @@ const photo = document.getElementById('rapper__photo'),
       left = document.getElementById('left'),
       right = document.getElementById('right');
 
-let indexOfQuestion, //index of current question
+let indexOfQuestion,
     indexOfPage = 0;
 let completedAnswers = [];
 

@@ -5,36 +5,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz</title>
+
+  <title>Musical Quiz</title>
+
   <link rel="stylesheet" href="main-style.css">
   <link rel="stylesheet" href="quiz.css">
   <link rel="stylesheet" href="gallery.css">
 
-  <link rel="icon" href="../assets/images/spotify_logo.png" type="image/x-icon">
+  <link rel="icon" href="../assets/images/spotify_logo.png">
   <link rel="prefetch prerender" href="">
 </head>
 
 <body>
+
   <div class="preloader" id="preloader">
-    <div class="loadingio-spinner-double-ring">
-      <div class="ld">
-        <div></div>
-        <div></div>
-        <div>
-          <div></div>
-        </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
-    </div>
-    <span class="font" id="Loading">Loading...</span>
-  </div>
+    <span id="Loading">Loading...</span>
+ </div>
+
   <div class="wrapper">
     <header class="header">
       <div class="header__wapper">
         <div class="logo_container">
-          <a href="#">
+          <a href="main.html">
             <img src="../assets/images/spotify_logo.png" class="img_logo" alt="logo">
           </a>
         </div>
@@ -54,7 +46,7 @@
       </div>
     </header>
 
-    <section class="swapper">
+    <main class="swapper">
       <h1 class="header__text">Your Library</h1>
       <div class="swapper__container">
         <div class="left__arrow" id="left"></div>
@@ -64,8 +56,8 @@
               <div class="raper__image" id="rapper__photo"></div>
             </div>
             <div class="two__columns">
-              <div class="rapper__nick font" id="rapperNick">104</div>
-              <div class="rapper__name font" id="rapperName">Юрий Дробытько</div>
+              <div class="rapper__nick" id="rapperNick"></div>
+              <div class="rapper__name " id="rapperName"></div>
             </div>
           </div>
           <div class="audio__container">
@@ -77,9 +69,9 @@
                 <div class="play__container">
                   <button class="play__button"></button>
                   <input type="range" id="progress" class="input_range" value="0" min="0" max="100" step="1"></input>
-                  <span class="current__time font">0:00</span>
-                  <span class="font">/</span>
-                  <spnan class="current__duration font">0:00</spnan>
+                  <span class="current__time">0:00</span>
+                  <span>/</span>
+                  <spnan class="current__duration">0:00</spnan>
                 </div>
                 <div class="volume__container">
                   <button class="mute__button"></button>
@@ -89,19 +81,21 @@
             </nav>
           </div>
           <div class="rapper__biography">
-            <div class="font" id="repperBio">Российский хип-хоп исполнитель, автор песен, бывший участник и создатель
-              крупного творческого объединения YungRussia. За свою музыкальную карьеру успел выпустить 5 студийных
-              альбомов, 4 микстейпа, 4 мини-альбома и 7 синглов.</div>
+            <div id="repperBio"></div>
           </div>
         </div>
         <div class="right__arrow" id="right"></div>
-    </section>
+      </div>
+    </main>
 
     <footer class="footer">
       <div class="footer_container">
-        <a href="https://rs.school/" class=""><img src="../assets/images/rs.svg" class="flogo" alt="RollingScopes"></a>
-        <a href="https://github.com/panfluba" class=""><img src="../assets/images/gh.png" class="flogo"
-            alt="github"></a>
+        <a href="https://rs.school/" class="">
+          <img src="../assets/images/rs.svg" class="flogo" alt="RollingScopes">
+        </a>
+        <a href="https://github.com/panfluba" class="">
+          <img src="../assets/images/gh.png" class="flogo" alt="github">
+        </a>
       </div>
     </footer>
 

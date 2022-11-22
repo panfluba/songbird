@@ -1,6 +1,3 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;600;700;900&display=swap");
-
 @font-face {
   font-family: "proxima-nova";
   src: url(../assets/fonts/proximanova_regular.ttf);
@@ -18,18 +15,15 @@
 body {
   margin: 0;
   font-family: "proxima-nova";
-  font-weight: 500;
   color: var(--text-grey-color);
+  font-size: 14px;
 }
 
 .warpper {
   margin: 0;
 }
 
-/*Header*/
-
 .header {
-  /* max-width: 1980px; */
   width: 100%;
   background-color: #181818;
   z-index: 10;
@@ -39,13 +33,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.design__text {
-  color:var(--text-white-color);
-  font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
-
 }
 
 .logo_container {
@@ -69,20 +56,18 @@ body {
 
 .menu-item {
   list-style-type: none;
-  padding-right: 46px;
+  padding: 0 20px;
 }
 
 .menu-item:hover {
-  filter: brightness(1);
   transition: 0.5s;
-  list-style-type: none;
-  padding-right: 46px;
+  padding: 0 21px;
+  scale: 1.04;
 }
 
 .ul_font {
   letter-spacing: 1px;
   font-family: 'proxima-nova', sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 24px;
   color: var(--text-grey-color);
@@ -90,29 +75,22 @@ body {
 }
 
 .ul_font:hover {
-  width: 101%;
   color: var(--text-white-color);
   transition: color .4s ease-out;
 }
 
-
-/*Intro-video*/
-
 @media (max-width: 815px) {
   .video {
-    background-size: cover;
-    position: relative;
-    padding-bottom: 56.25%;
-    min-height: 39vh;
     position: absolute;
-    left: -170px;
+    min-height: 600px;
+    right:  300px;
   }
 }
 
 .video {
   background-size: cover;
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 57%;
 }
 
 .video__media {
@@ -122,6 +100,7 @@ body {
   top: 0;
   left: 0;
 }
+
 .flogo{
   width: 24px;
   height: 24px;
@@ -130,34 +109,12 @@ body {
   justify-content: end;
   align-items: center;
 }
-.font {
-  color: aliceblue;
-  letter-spacing: 0px;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-}
 
-::-webkit-scrollbar {
-  width: 0.8em; /* ширина для вертикального скролла */
-  background-color: #111115;
-}
-
-::-webkit-scrollbar-thumb { /* ползунок скроллбара */
-  background-color: var(--text-grey-color);
-  opacity: 0.7;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #111115;
-}
 
 .intro {
-  min-height: 82vh;
+  height: auto;
   overflow: hidden;
   position: relative;
-  background-color: #111115;
   background-size: cover;
 }
 
@@ -173,7 +130,6 @@ body {
   z-index: 2;
 }
 
-/*Start Button*/
 .start_btn {
   background-color: transparent;
   width: 150px;
@@ -197,16 +153,12 @@ body {
 
 .btn_font {
   font-size: 1.5em;
-  font-family: 'Montserrat', sans-serif;
   color: var(--main-green-color);
 }
 
 .btn_arrow {
   color: white;
 }
-
-/*Footer*/
-
 
 .git_logo {
   width: 75px;
@@ -238,54 +190,6 @@ body {
   color: var(--text-white-color);
 }
 
-.footer__span {
-  cursor: default;
-  letter-spacing: 1px;
-  color: var(--text-grey-color);
-  font-size: 1.5em;
-}
-
-.footer__span:hover {
-  transition: 0.3s;
-  opacity: 0.5;
-}
-
-/* .footer__span:after {
-  display: block;
-  left: 0;
-  width: 0;
-  height: 1.5px;
-  background-color: #ffffff;
-  content: "";
-  transition: width 0.3s ease-out;
-} */
-
-.footer__span:hover:after,
-.footer__span:focus:after {
-  width: 101%;
-}
-
-.gratitude__footer {
-  margin-top: -29px;
-  width: 320px;
-  margin: 0 auto;
-  margin-top: -25px;
-}
-
-.thanks__footer:hover {
-  filter: invert(20);
-  transition: 0.5s;
-}
-
-.thanks__footer {
-
-  font-family: 'Montserrat', bold;
-  color: #363434;
-  font-size: 20px;
-  cursor: default;
-  text-decoration: none;
-}
-
 @media (max-width: 1100px) {
   .ul_font {
 
@@ -307,14 +211,6 @@ body {
     height: 25px;
   }
 
-  .footer__span {
-    letter-spacing: 1px;
-    color: var(--main-green-color);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    margin-top: 0px;
-  }
-
   .logo_container {
     max-width: 50px;
   }
@@ -322,14 +218,12 @@ body {
   .gratitude__footer {
     display: none;
   }
-
 }
 
 #question {
   display: none;
 }
 
-/*PRELOADER*/
 .preloader {
   flex-direction: column;
   display: flex;
@@ -342,122 +236,15 @@ body {
   z-index: 1;
 }
 
-
-@keyframes ldio-y5epx1c1hmn {
-  0% {
-    transform: rotate(0)
-  }
-
-  100% {
-    transform: rotate(360deg)
-  }
+::-webkit-scrollbar {
+  width: 0.8em; /* ширина для вертикального скролла */
 }
 
-.ld div {
-  box-sizing: border-box !important
+::-webkit-scrollbar-thumb { /* ползунок скроллбара */
+  background-color: var(--text-grey-color);
+  opacity: 0.7;
 }
 
-.ld>div {
-  position: absolute;
-  width: 134px;
-  height: 134px;
-  top: 33px;
-  left: 33px;
-  border-radius: 50%;
-  border: 6px solid #000;
-  border-color: var(--main-green-color) transparent var(--main-green-color);
-  animation: ldio-y5epx1c1hmn 1s linear infinite;
-}
-
-.ld>div:nth-child(2),
-.ld>div:nth-child(4) {
-  width: 118px;
-  height: 118px;
-  top: 41px;
-  left: 41px;
-  animation: ldio-y5epx1c1hmn 3s linear infinite reverse;
-}
-
-.ld>div:nth-child(2) {
-  border-color: transparent var(--text-white-color) transparent var(--text-white-color);
-}
-
-.ld>div:nth-child(3) {
-  border-color: transparent
-}
-
-.ld>div:nth-child(3) div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: rotate(45deg);
-}
-
-.ld>div:nth-child(3) div:before,
-.ld>div:nth-child(3) div:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  top: -6px;
-  left: 58px;
-  background: #7f0000;
-  border-radius: 50%;
-  box-shadow: 0 128px 0 0 #7f0000;
-}
-
-.ld>div:nth-child(3) div:after {
-  left: -6px;
-  top: 58px;
-  box-shadow: 128px 0 0 0 #7f0000;
-}
-
-.ld>div:nth-child(4) {
-  border-color: transparent;
-}
-
-.ld>div:nth-child(4) div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: rotate(45deg);
-}
-
-.ld>div:nth-child(4) div:before,
-.ld>div:nth-child(4) div:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  top: -6px;
-  left: 50px;
-  background: #000000;
-  border-radius: 50%;
-  box-shadow: 0 112px 0 0 #000000;
-}
-
-.ld>div:nth-child(4) div:after {
-  left: -6px;
-  top: 50px;
-  box-shadow: 112px 0 0 0 #000000;
-}
-
-.loadingio-spinner-double-ring-9fa3q7he3f {
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-  overflow: hidden;
-  background: #111115;
-}
-
-.ld {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform: translateZ(0) scale(1);
-  backface-visibility: hidden;
-  transform-origin: 0 0;
-  /* see note above */
+::-webkit-scrollbar-thumb:hover {
+  background-color: transparent;
 }
